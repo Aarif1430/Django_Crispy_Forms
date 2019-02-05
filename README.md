@@ -13,5 +13,4 @@ Django cripsy forms to manage django forms in efficient way. This project gives 
 
 ## To Do
 - open you browser and go to url localhost:8000/ResumeParser/bootstrap4
-- 
-- 
+- To run on different port: python manage.py runserver 8003 
