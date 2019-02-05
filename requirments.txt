@@ -1,0 +1,4 @@
+certifi==2018.11.29
+Django==2.1.5
+django-crispy-forms==1.7.2
+pytz==2018.9

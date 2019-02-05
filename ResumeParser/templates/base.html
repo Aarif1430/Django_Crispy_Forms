@@ -1,0 +1,45 @@
+
+<html>
+	<head>
+		{% block head %}
+			<title>Django ResumeParser</title>
+		{%endblock%}
+		{% load static %}
+				<!-- CSS Files -->  
+        <meta charset="utf-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+				<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+				
+				
+				<title>DashBoard</title>
+
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+
+<!-- Links -->
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 1</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Link 2</a>
+    </li>
+  </ul>
+
+  <!-- Navbar text-->
+  <span class="navbar-text">
+    Navbar text
+  </span>
+
+</nav>
+
+</head>
+<body>
+
+ <div class="container">
+          {% block content %}
+          {% endblock %}
+</div>
+</body>
+</html>

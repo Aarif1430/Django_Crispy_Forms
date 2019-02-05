@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% load crispy_forms_tags %}
+
+{% block content %}
+  <form method="post" id="form1">
+    {% csrf_token %}
+    <div class="form-row">
+      <div class="form-group col-md-6 mb-0">
+        {{ form.name|as_crispy_field }}
+      </div>
+      <div class="form-group col-md-6 mb-0">
+        {{ form.email|as_crispy_field }}
+      </div>
+    </div>
+    <div class="form-row">
+    <div class="form-group col-md-6 mb-0">
+    {{ form.summary|as_crispy_field }}
+    </div>
+    <div class="form-group col-md-6 mb-0">
+    {{ form.experience|as_crispy_field }}
+    </div>
+    <div class="form-group col-md-6 mb-0">
+    {{ form.projects|as_crispy_field }}
+    </div>
+    <div class="form-group col-md-6 mb-0">
+    {{ form.area_of_interest|as_crispy_field }}
+    </div>
+    <div class="form-group col-md-6 mb-0">
+    {{ form.languages|as_crispy_field }}
+    </div>
+    <div class="form-group col-md-6 mb-0">
+    {{ form.programming_tools|as_crispy_field }}
+    </div>
+    <div class="form-group col-md-6 mb-0">
+    {{ form.tools_frameworks|as_crispy_field }}
+    </div>
+    <div class="form-group col-md-6 mb-0">
+    {{ form.community|as_crispy_field }}
+    </div>
+    </div>
+    {{ form.check_me_out|as_crispy_field }}
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+{% endblock %}
