@@ -8,7 +8,7 @@ Django cripsy forms to manage django forms in efficient way. This project gives 
 
 ## Instructions
 - From project directory run 
-  $ python -r requirments.txt  (To install all the packages)
+  $ python install -r requirments.txt  (To install all the packages)
 - $ python manage.py runserver
 
 ## To Do
